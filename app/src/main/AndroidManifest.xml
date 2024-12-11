@@ -25,9 +25,9 @@
             android:name="com.google.firebase.analytics.API_KEY"
             android:value="@string/google_api_key" />
 
-        <!-- Main Activity -->
+        <!-- Login Activity (Launch Screen) -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,8 +35,14 @@
             </intent-filter>
         </activity>
 
+        <!-- Register Activity -->
         <activity
-            android:name=".TodoActivity"
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
             android:exported="false" />
 
     </application>

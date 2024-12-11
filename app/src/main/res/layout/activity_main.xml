@@ -5,12 +5,14 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Input for adding tasks -->
     <EditText
         android:id="@+id/input_task"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter a new task"/>
 
+    <!-- Add Task Button -->
     <Button
         android:id="@+id/btn_add_task"
         android:layout_width="wrap_content"
@@ -19,9 +21,21 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"/>
 
+    <!-- RecyclerView for tasks -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginTop="16dp"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>
